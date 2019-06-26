@@ -122,11 +122,11 @@ mapping.body[indexType] = {
     },
     latitude: {
       type: 'float',
-      index: 'no'
+      index: false
     },
     longitude: {
       type: 'float',
-      index: 'no'
+      index: false
     },
     address_complete: {
       type: 'keyword',
