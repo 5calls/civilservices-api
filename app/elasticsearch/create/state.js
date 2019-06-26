@@ -57,8 +57,7 @@ mapping.body[indexType] = {
       type: 'date'
     },
     admission_number: {
-      type: 'integer',
-      index: 'not_analyzed'
+      type: 'integer'
     },
     capital_city: {
       type: 'keyword',
@@ -68,12 +67,10 @@ mapping.body[indexType] = {
       type: 'text'
     },
     population: {
-      type: 'integer',
-      index: 'not_analyzed'
+      type: 'integer'
     },
     population_rank: {
-      type: 'integer',
-      index: 'not_analyzed'
+      type: 'integer'
     },
     constitution_url: {
       type: 'keyword',
