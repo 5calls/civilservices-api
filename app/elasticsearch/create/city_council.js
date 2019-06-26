@@ -33,21 +33,21 @@ mapping.body[indexType] = {
       type: 'integer'
     },
     state_name: {
-      type: 'string'
+      type: 'text'
     },
     state_name_slug: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     state_code: {
-      type: 'string'
+      type: 'text'
     },
     state_code_slug: {
-      type: 'string',
-      index: 'no'
+      type: 'text',
+      index: true
     },
     district: {
-      type: 'string'
+      type: 'text'
     },
     at_large: {
       type: 'boolean'
@@ -56,49 +56,49 @@ mapping.body[indexType] = {
       type: 'boolean'
     },
     title: {
-      type: 'string',
-      index: 'not_analyzed'
+      type: 'keyword',
+      index: true
     },
     party: {
-      type: 'string',
-      index: 'not_analyzed'
+      type: 'keyword',
+      index: true
     },
     name: {
-      type: 'string'
+      type: 'text'
     },
     name_slug: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     first_name: {
-      type: 'string'
+      type: 'text'
     },
     middle_name: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     last_name: {
-      type: 'string'
+      type: 'text'
     },
     name_suffix: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     goes_by: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     pronunciation: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     gender: {
-      type: 'string',
-      index: 'not_analyzed'
+      type: 'keyword',
+      index: true
     },
     ethnicity: {
-      type: 'string',
-      index: 'not_analyzed'
+      type: 'keyword',
+      index: true
     },
     age: {
       type: 'integer'
@@ -113,12 +113,12 @@ mapping.body[indexType] = {
       type: 'date'
     },
     email: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     phone: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     latitude: {
       type: 'float',
@@ -129,87 +129,87 @@ mapping.body[indexType] = {
       index: 'no'
     },
     address_complete: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_number: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_prefix: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_street: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_sec_unit_type: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_sec_unit_num: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_city: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_state: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_zipcode: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     address_type: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     population: {
       type: 'integer'
     },
     background_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     city_government_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     city_council_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     city_council_calendar_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     city_council_legislation_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     city_council_committees_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     twitter_handle: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     twitter_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     facebook_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     photo_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     created_date: {
       type: 'date'
@@ -227,7 +227,7 @@ mapping.body[indexType] = {
       type: 'geo_shape'
     },
     aliases: {
-      type: 'string'
+      type: 'text'
     }
   }
 };

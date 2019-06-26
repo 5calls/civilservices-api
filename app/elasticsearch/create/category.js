@@ -36,10 +36,10 @@ mapping.body[indexType] = {
       type: 'integer'
     },
     name: {
-      type: 'string'
+      type: 'text'
     },
     slug: {
-      type: 'string'
+      type: 'text'
     }
   }
 };

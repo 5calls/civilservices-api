@@ -33,16 +33,16 @@ mapping.body[indexType] = {
       type: 'integer'
     },
     fips: {
-      type: 'string'
+      type: 'text'
     },
     state_name: {
-      type: 'string'
+      type: 'text'
     },
     state_code: {
-      type: 'string'
+      type: 'text'
     },
     name: {
-      type: 'string'
+      type: 'text'
     },
     shape: {
       type: 'geo_shape',

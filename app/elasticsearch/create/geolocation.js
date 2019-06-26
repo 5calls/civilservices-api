@@ -33,30 +33,30 @@ mapping.body[indexType] = {
       type: 'integer'
     },
     zipcode: {
-      type: 'string'
+      type: 'text'
     },
     primary_city: {
-      type: 'string'
+      type: 'text'
     },
     acceptable_cities: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     unacceptable_cities: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     state: {
-      type: 'string'
+      type: 'text'
     },
     county: {
-      type: 'string'
+      type: 'text'
     },
     timezone: {
-      type: 'string'
+      type: 'text'
     },
     area_codes: {
-      type: 'string'
+      type: 'text'
     },
     latitude: {
       type: 'float'

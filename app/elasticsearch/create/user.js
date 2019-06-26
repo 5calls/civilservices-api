@@ -33,37 +33,37 @@ mapping.body[indexType] = {
       type: 'boolean'
     },
     username: {
-      type: 'string'
+      type: 'text'
     },
     first_name: {
-      type: 'string'
+      type: 'text'
     },
     last_name: {
-      type: 'string'
+      type: 'text'
     },
     company_name: {
-      type: 'string'
+      type: 'text'
     },
     profile_name: {
-      type: 'string'
+      type: 'text'
     },
     location: {
-      type: 'string'
+      type: 'text'
     },
     profile_link_website: {
-      type: 'string'
+      type: 'text'
     },
     profile_link_twitter: {
-      type: 'string'
+      type: 'text'
     },
     profile_link_1: {
-      type: 'string'
+      type: 'text'
     },
     profile_link_2: {
-      type: 'string'
+      type: 'text'
     },
     profile_link_3: {
-      type: 'string'
+      type: 'text'
     },
     banned: {
       type: 'boolean'

@@ -30,10 +30,10 @@ var mapping = {
 mapping.body[indexType] = {
   properties: {
     name: {
-      type: 'string'
+      type: 'keyword'
     },
     slug: {
-      type: 'string'
+      type: 'keyword'
     }
   }
 };

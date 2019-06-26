@@ -33,26 +33,25 @@ mapping.body[indexType] = {
       type: 'integer'
     },
     state_name: {
-      type: 'string'
+      type: 'text'
     },
     state_name_slug: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     state_code: {
-      type: 'string'
+      type: 'text'
     },
     state_code_slug: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     nickname: {
-      type: 'string',
-      index: 'not_analyzed'
+      type: 'keyword',
+      index: true
     },
     website: {
-      type: 'string',
-      index: 'no'
+      type: 'text'
     },
     admission_date: {
       type: 'date'
@@ -62,12 +61,11 @@ mapping.body[indexType] = {
       index: 'not_analyzed'
     },
     capital_city: {
-      type: 'string',
-      index: 'not_analyzed'
+      type: 'keyword',
+      index: true
     },
     capital_url: {
-      type: 'string',
-      index: 'no'
+      type: 'text'
     },
     population: {
       type: 'integer',
@@ -78,40 +76,35 @@ mapping.body[indexType] = {
       index: 'not_analyzed'
     },
     constitution_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     state_flag_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     state_seal_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     map_image_url: {
-      type: 'string',
-      index: 'no'
+      type: 'keyword',
+      index: true
     },
     landscape_background_url: {
-      type: 'string',
-      index: 'no'
+      type: 'text'
     },
     skyline_background_url: {
-      type: 'string',
-      index: 'no'
+      type: 'text'
     },
     twitter_handle: {
-      type: 'string',
-      index: 'no'
+      type: 'text'
     },
     twitter_url: {
-      type: 'string',
-      index: 'no'
+      type: 'text'
     },
     facebook_url: {
-      type: 'string',
-      index: 'no'
+      type: 'text'
     },
     shape: {
       type: 'geo_shape'
