@@ -1,9 +1,17 @@
-FROM node:6.9.4
+FROM ubuntu:16.04
 
 LABEL maintainer "Peter Schmalfeldt hello@civil.services"
 LABEL version="1.0"
 LABEL description="Local Development of Civil Service API"
 LABEL vendor="Civil Service USA Corp."
+
+# Install Node.js 8 and npm 5
+RUN apt-get update
+RUN apt-get -qq update
+RUN apt-get install -y build-essential
+RUN apt-get install -y curl git
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash
+RUN apt-get install -y nodejs
 
 # Create non-root user to run app with
 
@@ -26,7 +34,7 @@ USER civilservices
 RUN export API_NODE_ENV=docker
 
 # Install dependencies
-RUN npm install --no-optional && npm cache clean
+RUN npm install --no-optional && npm cache verify
 
 # Switch to root and copy over the rest of our code
 # This is here, after the npm install, so that code changes don't trigger an un-caching
